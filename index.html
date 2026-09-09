@@ -12,22 +12,20 @@
 
     <div class="mainNetflixContainer">
         <div class="backgroundContainer">
-            <div class="pinkoverlay"></div>
+            <img src="./netflix-background-image.jpg" alt="netflix">
+            <div class="pinkoverlay">
+            </div>
+            <div class="contentContainer">
 
-        </div>
-        <div class="contentContainer">
 
-
-            <nav class="navContainer">
-                <div class="upperNavbarSection">
-                    <div class="upperNavbarLeftSction">
-                        <img class="netflixlogo"
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
-                    </div>
-                    <div class="upperNavbarRightSection">
-                        <div class="navBarButtonContainer">
-                            <div class="languageButtonContainer">
-                                <button class="languageButton">
+                <nav class="navContainer">
+                    <div class="upperNavbarSection">
+                        <div class="upperNavbarLeftSction">
+                            <img class="netflixlogo" src="./netflix-logo.png">
+                        </div>
+                        <div class="upperNavbarRightSection">
+                            <div class="navBarButtonContainer">
+                                <div class="languageBox">
                                     <div role="img" aria-hidden="true"
                                         class="default-ltr-iqcdef-cache-lnyyxe e1vkmu651"><svg viewBox="0 0 16 16"
                                             width="16" height="16" data-icon="LanguagesSmall" data-icon-id=":r5:"
@@ -38,82 +36,248 @@
                                                 fill="currentColor"></path>
 
                                         </svg></div>
-                                    <p>English</p>
-                                </button>
-                            </div>
-                            <div class="signInButtonContainer">
-                                <button class="signinButton">
-                                    Sign In
-                                </button>
+                                    <select id="languageSelect">
+                                        <option value="en">English</option>
+                                        <option value="hi">हिंदी</option>
+                                    </select>
+                                </div>
+                                <div class="signInButtonContainer">
+                                    <button id="signInButton" class="signinButton">
+                                        Sign In
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="lowerNavbarSection">
-                    <ul class="menuList">
-                        <li class="menuListItems">Popular Now </li>
-                        <li class="menuListItems">Plans</li>
-                        <li class="menuListItems">Reason to join</li>
-                        <li class="menuListItems">Faq</li>
 
-                    </ul>
-                </div>
-            </nav>
-            <section class="bannerSection">
-                <div class="overlay"></div>
-                <div class="bannerContainer">
-                    <h2>Unlimited movies, TV shows & more</h2>
-                    <h4>Starts at ₹149. Cancel at any time. </h4>
-                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                    <div class="inputContainer"><input class="emailInputBox" type="email" placeholder="Email Address"
-                            name="email">
-                        <button class="getStartedButton">Get started</button>
+                </nav>
+                <section class="bannerSection">
+                    <div class="overlay"></div>
+                    <div class="bannerContainer">
+                        <h1 id="heroTitle">Unlimited movies,</h1>
+                        <h1> shows & more</h1>
+                        <p id="heroSubtitle">Starts at ₹149. Cancel at any time. </p>
+                        <h3 id="readyTitle">Ready to watch?</h3>
+                        <p id="">Enter your email to create or restart your membership.</p>
+                        <div class="inputContainer"><input id="emailInput" class="emailInputBox" type="email"
+                                placeholder="Email Address" name="email">
+                            <button id="getStartedButton" class="getStartedButton">Get started</button>
+                        </div>
                     </div>
-
-                </div>
-            </section>
-            <section class="carouselSection">
-                <h2>Trending Now</h2>
-                <div class="row">
-                    <img src="https://images.moneycontrol.com/static-mcnews/2025/12/20251213113811_Feature-Image.jpg" alt="movie poster"  />
-                    <img src="https://pix.avax.news/avaxnews/83/a4/0001a483.jpeg" alt="movie poster" />
-                    <img src="https://marketplace.canva.com/EAFBNkVxsJY/1/0/1131w/canva-grey-white-elegant-vintage-drama-movie-poster-Aj9bV_GaoAI.jpg" alt="movie poster" />
-                    <img src="https://i.pinimg.com/originals/a2/30/3a/a2303aa4bcab7658f38f7c524c80e844.jpg" alt="movie poster" />
-                    <img src="https://images.herzindagi.info/her-zindagi-english/images/2025/12/10/template/image/tere-ishq-mein-1765351449533.jpg" alt="movie poster">
-                    <img src="https://www.cmon.com/wp-content/uploads/2023/06/avatar.png" alt="movie poster">
-                </div>
-
-                <h2>Top Rated</h2>
-                <div class="row">
-                    <img src="https://impactful.news/wp-content/uploads/2023/01/best_g_rated_movies_mary_poppins_1964-768x1139.jpg" alt="movie poster">
-                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/01/fighter-2024-movie-poster.jpg" alt="movie poster">
-                    <img src="https://i.pinimg.com/originals/6d/51/db/6d51db008560d648a89d2a870ac4d5a7.jpg" alt="movie poster">
-                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/12/unsung-hero-movie-poster.jpg" alt="movie poster">
-                    <img src="https://static.metacritic.com/images/products/movies/9/92b0da5d3482fb1665b34a99ed81678c.jpg" alt="movie poster">
-                    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/sharedimages/2024/04/oppenheimer-poster.jpg" alt="movie poster">
-
-
-                </div>
-
-                <h2>Action Movies</h2>
-                <div class="row">
-                    <img src="https://marketplace.canva.com/EAFR15iWplg/2/0/1131w/canva-red-and-black-minimal-action-movie-poster-Dg26RlVWS5s.jpg" alt="movie poster">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-movie-poster-design-template-2e1303cbb1ea75b5415b1acb20f9b470_screen.jpg?ts=1693984002" alt="movie poster">
-                    <img src="https://i.pinimg.com/originals/ac/97/04/ac9704668714df2bf7cd44cac40b0ea9.jpg" alt="movie poster">
-                    <img src="https://marketplace.canva.com/EAE5iMZ9Rb8/1/0/1131w/canva-brown-bold-action-movie-poster-hUTpWGLO9xk.jpg" alt="movie poster">
-                    <img src="https://itsok123.com/serbia/wp-content/uploads/John_Wick_Poster_003.jpg" alt="movie poster">
-                    <img src="https://vegaonlinemovies.com/uploads/posts/2026-02/1625582_poster_1772274817.jpg" alt="movie poster">
-                </div>
-            </section>
-
-
-            <footer style="text-align:center; padding:20px;">
-                <p>Netflix Clone © 2026</p>
-            </footer>
-            </section>
+                </section>
+            </div>
         </div>
+        <section class="carouselSection">
+            <h2 id="trendingTitle">Trending Now</h2>
+            <div class="row">
+                <div class="movieCard">
+                    <span>1</span>
+                    <img src="./images/dhamal4.webp" alt="Dhamaal 4" />
+                </div>
+
+                <div class="movieCard">
+                    <span>2</span>
+                    <img src="./images/Gandhari.jpg" alt="Gandhari" />
+                </div>
+
+                <div class="movieCard">
+                    <span>3</span>
+                    <img src="./images/OS.jpg" alt="Operation Safed Sagar" />
+                </div>
+
+                <div class="movieCard">
+                    <span>4</span>
+                    <img src="./images/Alpa.webp" alt="Alpha" />
+                </div>
+
+                <div class="movieCard">
+                    <span>5</span>
+                    <img src="./images/cocktail2.jpg" alt="Cocktail 2">
+                </div>
+
+                <div class="movieCard">
+                    <span>6</span>
+                    <img src="./images/samay.jpg" alt="Latent">
+                </div>
+
+                <div class="movieCard">
+                    <span>7</span>
+                    <img src="./images/gatta.jpeg" alt="Gatta Kusthi 2">
+                </div>
+
+                <div class="movieCard">
+                    <span>8</span>
+
+                    <img src="./images/peddi.webp" alt="Peddi">
+                </div>
+
+                <div class="movieCard">
+                    <span>9</span>
+                    <img src="./images/korean-kanakaraj.jpeg" alt="Korean Kanakaraju">
+                </div>
+
+                <div class="movieCard">
+                    <span>10</span>
+                    <img src="./images/musafircafe.jpg" alt="Musafir cafe" />
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reasonsSection">
+
+            <h2 id="reasonsTitle">More Reasons to Join</h2>
+
+            <div class="reasonsContainer">
+
+                <div class="reasonCard">
+                    <h3 id="tvTitle">Enjoy on your TV</h3>
+                    <p id="tvText">
+                        Watch on Smart TVs, PlayStation, Xbox, Chromecast,
+                        Apple TV, Blu-ray players and more.
+                    </p>
+                    <div class="reasonIcon">📺</div>
+                </div>
+
+                <div class="reasonCard">
+                    <h3 id="downloadTitle">Download your shows to watch offline</h3>
+                    <p id="downloadText">
+                        Save your favourite movies and shows so you can
+                        watch them anytime, even without an internet connection.
+                    </p>
+                    <div class="reasonIcon">⬇️</div>
+                </div>
+
+                <div class="reasonCard">
+                    <h3 id="watchTitle">Watch everywhere</h3>
+                    <p id="watchText">
+                        Stream unlimited movies and TV shows on your
+                        phone, tablet, laptop and TV.
+                    </p>
+                    <div class="reasonIcon">🔭</div>
+                </div>
+
+                <div class="reasonCard">
+                    <h3 id="kidsTitle">Create profiles for kids</h3>
+                    <p id="kidsText">
+                        Give kids their own space to enjoy their favourite
+                        characters and shows.
+                    </p>
+                    <div class="reasonIcon">😊</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="faqSection">
+
+            <h2 id="faqTitle">Frequently Asked Questions</h2>
+
+            <div class="faqContainer">
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion1">What is Netflix?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer1">
+                            Netflix is a streaming service where you can watch
+                            movies, TV shows, documentaries and more on
+                            internet-connected devices.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion2">How much does Netflix cost?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer2">
+                            Netflix offers different membership plans. Choose
+                            a plan that works best for you and enjoy streaming
+                            your favourite movies and shows.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion3">Where can I watch?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer3">
+                            You can watch Netflix on smart TVs, smartphones,
+                            tablets, laptops, gaming consoles and other
+                            supported devices.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion4">How do I cancel?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer4">
+                            You can cancel your membership at any time from
+                            your account settings.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion5">What can I watch on Netflix?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer5">
+                            Netflix has movies, TV shows, documentaries,
+                            original series and many other types of entertainment.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faqItem">
+                    <button class="faqQuestion">
+                        <h3 id="faqQuestion6">Is Netflix good for kids?</h3>
+                        <span class="faqIcon">+</span>
+                    </button>
+
+                    <div class="faqAnswer">
+                        <p id="faqAnswer6">
+                            Yes. Netflix provides a dedicated kids experience
+                            with age-appropriate movies and shows.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer style="text-align:center; padding:20px;">
+            <p>Netflix Clone © 2026</p>
+        </footer>
     </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 
 </html>
