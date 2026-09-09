@@ -30,7 +30,7 @@ This project was created to practice front-end development, responsive design, J
 
 I created a short 1-minute video to demonstrate the website and its main features.
 
-[▶️ Watch Project Demo](./screenshots/netflix-clone-demo.mp4)
+[▶️ Watch Project Demo](./screenshots/netflix-clone-video.mp4)
 
 ---
 
